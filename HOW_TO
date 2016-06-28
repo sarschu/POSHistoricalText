@@ -1,0 +1,23 @@
+Run in the following order:
+
+python make_sets.py all_annotated.txt
+python make_infiles.py
+python tag_all_mhd_nhd.py
+python train_nns.py 
+python extract_parts_nn.py
+python crf.py
+python stacking.py
+python tritraining.py
+python train_nn_self.py
+
+
+EVALUATION
+
+python accuracy_POS.py test_gold test.(nn|mhd|nhd|stacking|tritraining|nn_self|crf)
+
+
+
+
+to delete all content
+
+python empty_all_sets.py
